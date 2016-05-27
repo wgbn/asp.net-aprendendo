@@ -6,8 +6,8 @@ namespace CalculoDeDieta
 	{
 		public static void Main (string[] args)
 		{
-			Alimento aveia = new Alimento ("Aveia em Flocos", 13.9f, 66.6f, 8.5f, 100f);
-			Alimento banana = new Alimento ("Banana da Terra", 1.4f, 33.7f, 0.2f, 100f);
+			Alimento aveia = new Alimento (){ Nome = "Aveia em Flocos", Proteina = 13.9f, Carboidrato = 66.6f, Gordura = 8.5f, Forca = Alimento.ForcaEn.C };
+			Alimento banana = new Alimento (){ Nome = "Banana da Terra", Proteina = 1.4f, Carboidrato = 33.7f, Gordura = 0.2f, Forca = Alimento.ForcaEn.C };
 
 			aveia.CalcularCaloria ();
 			banana.CalcularCaloria ();
